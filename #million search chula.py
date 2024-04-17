@@ -1,14 +1,16 @@
 #million search chula
 #f = open("million.txt","r")
 f=open("million-sorted.txt","r")
+sites= []
 pos = 0
+name="chula.ac.th"
 for x in f:
     site = x.strip()
-    pos = pos+1
-    if site=="chula.ac.th":
-        break
-        print(x.strip())
-f.close()
+    sites.append(site)
+    
+   
 
-print(pos)
+f.close()
+print (len(sites))
+
 
